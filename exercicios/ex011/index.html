@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias dinâmicas</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamano do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!-- "max-width: 750px" -> O tamanho máx sendo 750px, ele carrega a foto-p -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"> <!-- A ordem deve ser da MENOR para a MAIOR! -->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <!-- <audio src="midia/goodday.mp3" controls autoplay></audio>
+    -->
+    <!-- MP3 WAV OGG-->
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+
+    <p>Forma mais simples de adicionar um áudio:</p>
+    <audio src="midia/goodday.mp3" controls autoplay></audio>
+    <!-- MP3 WAV OGG-->
+
+    <p>Forma mais completa:</p>
+    <audio preload="metadata" controls> <!-- controls adiciona controles de play e etc -->
+        <!-- preload="metadata" carrega o básico em abrir a página. (RECOMENDADO), "autoplay dentro de <audio> carrega o audio assim que o site é aberto. -->
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg"> <!-- O navegador primeiro tenta reproduzir esse arquivo em mp3, caso não consiga, ele tenta o próximo e assim por diante. -->
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav"> <!-- Evite arquivos WAV. São muito pesados. -->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p> <!-- Caso ele não consiga reproduzir nenhum, essa mensagem aparece.-->
+    </audio>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /*
+    Medidas Absolutas
+    cm, mm, in(polegada), px, pt, pc. Recomendado: px
+
+    Medidas Relativas
+    em(Altura M), ex(Altura x), rem, vw, vh, %. Recomendado: em 
+
+    16px geralmente = 1em
+    */
+    font-size: 1em;
+}
