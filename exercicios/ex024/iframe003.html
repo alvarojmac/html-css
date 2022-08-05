@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur minus vitae exercitationem distinctio nemo iure dicta! Quidem quam, odit laudantium voluptatum ratione fuga mollitia esse autem deserunt, eius quia debitis.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pagina001.html" target="frame">Primeira página</a></li> <!-- target aponta para o "name" do iframe -->
+        <li><a href="paginas-extras/pagina002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pagina003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt culpa blanditiis vitae ratione commodi similique rerum nobis voluptatem ipsam! Eligendi nulla facilis hic illum? Fugiat velit aut illo mollitia cumque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi laboriosam accusantium fugit alias est sit magni harum repudiandae assumenda asperiores, ipsa quos, hic quibusdam ullam quod voluptates dolor maxime sint?</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1>">
+        <p>Seu navegador não é compatível</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex corporis sunt nisi, adipisci debitis iste modi esse a pariatur repudiandae, enim quidem sit ducimus itaque ipsam exercitationem molestias dolorum vero.lorem Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, veritatis. Excepturi omnis blanditiis culpa explicabo architecto odio, libero ratione ullam accusantium quis, harum aperiam commodi iure minus, officia fugit expedita?</p>
+</body>
+</html>
