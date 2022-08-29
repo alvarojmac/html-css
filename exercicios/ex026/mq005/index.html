@@ -7,8 +7,9 @@
     <title>Media Query</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet"> <!-- google fonts para o ícone de menu -->
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="mudouTamanho()"> <!-- Para evitar o erro no menu -->
     <header>
         <h1>Meu Site</h1>
         <i id="burger" class="material-icons" onclick="clickMenu()">menu</i> <!-- google fonts para o ícone de menu -->
